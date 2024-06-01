@@ -1,0 +1,27 @@
+# def find_max(list1):
+#     max=list1[0]
+#     for i in list1:
+#         if i>max:
+#             max=i
+#     return max
+# list1=[20,40,60,80,100]
+# print("the current max is",find_max(list1))
+
+
+# ----------------------------------------------------------
+
+
+def invert_dict(d):
+    inverse=dict()
+    for key in d:
+        inverse[d[key]]=key
+        # for i in val:
+            # if i not in inverse:
+            #     inverse[i]=[key]
+            # else:
+            #     inverse[i].append(key)
+    return inverse
+my_dict={'a':1,'b':2}
+invert_dict=invert_dict(my_dict)
+print("original dictionary:",my_dict)
+print("inverted dictionary:",invert_dict)
